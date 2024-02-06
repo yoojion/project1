@@ -1,0 +1,760 @@
+@charset "utf-8";
+@import url(./reset.css);
+
+.df {
+  display: flex;
+}
+body {
+  background: rgb(255, 255, 255);
+}
+.inner {
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  margin: auto;
+  background: #ffffff00;
+}
+
+/* header */
+
+.menu_wrap {
+  background: white;
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.logo {
+  width: 10%;
+}
+.logo > img {
+  width: 100%;
+  height: 100%;
+  padding: 3px 0;
+  background: #ffffff;
+}
+nav {
+  width: 80%;
+  background: #ffffff;
+}
+nav > .gnb {
+  justify-content: space-evenly;
+}
+nav > .gnb > li > a {
+  font-family: "GmarketSans";
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 50px;
+  color: #134aa9;
+  position: relative;
+}
+nav .a::before {
+  font-family: "GmarketSans";
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 50px;
+  color: #ff458c;
+  position: absolute;
+  left: 0;
+  content: "경기생활문화센터";
+  overflow: hidden;
+  width: 0%;
+  transition: all 0.3s;
+}
+nav .a:hover:before {
+  width: 100%;
+}
+nav .aa::before {
+  font-family: "GmarketSans";
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 50px;
+  color: #ff458c;
+  position: absolute;
+  left: 0;
+  content: "경기도생활문화";
+  overflow: hidden;
+  width: 0%;
+  transition: all 0.3s;
+}
+nav .aa:hover:before {
+  width: 100%;
+}
+nav .aaa::before {
+  font-family: "GmarketSans";
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 50px;
+  color: #ff458c;
+  position: absolute;
+  left: 0;
+  content: "기록자료";
+  overflow: hidden;
+  width: 0%;
+  transition: all 0.3s;
+}
+nav .aaa:hover:before {
+  width: 100%;
+}
+nav .aaaa::before {
+  font-family: "GmarketSans";
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 50px;
+  color: #ff458c;
+  position: absolute;
+  left: 0;
+  content: "웹진";
+  overflow: hidden;
+  width: 0%;
+  transition: all 0.3s;
+}
+nav .aaaa:hover:before {
+  width: 100%;
+}
+nav .aaaaa::before {
+  font-family: "GmarketSans";
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 50px;
+  color: #ff458c;
+  position: absolute;
+  left: 0;
+  content: "소통";
+  overflow: hidden;
+  width: 0%;
+  transition: all 0.3s;
+}
+nav .aaaaa:hover:before {
+  width: 100%;
+}
+.lss {
+  width: 10%;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+}
+.lss > a {
+  font-family: "NotoSansKR";
+  font-size: 1rem;
+  color: #134aa9;
+}
+h3 {
+  font-family: "GmarketSans";
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 4rem;
+  color: #2a2e35;
+}
+h5 {
+  font-family: "NotoSansKR";
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #2a2e35;
+}
+
+/* main */
+/* section_wrap1 */
+
+.section_wrap1 {
+  background: white;
+  width: 100%;
+  position: relative;
+}
+.main_banner {
+  width: 100%;
+  height: 470px;
+  background: url(../img/main_visual.jpg) no-repeat top/cover;
+}
+.main_banner > .inner {
+  position: relative;
+}
+.main_banner > .inner > h4 {
+  font-family: "GmarketSans";
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #134aa9;
+  position: absolute;
+  top: 180px;
+}
+.main_banner > .inner > h2 {
+  font-family: "GmarketSans";
+  font-size: 5rem;
+  font-weight: 600;
+  color: #134aa9;
+  position: absolute;
+  top: 215px;
+}
+.main_banner > .inner > .bar {
+  width: 70px;
+  height: 3px;
+  display: block;
+  background: #134aa9;
+  position: absolute;
+  content: "";
+  top: 406px;
+}
+.main_banner > .inner > .no {
+  font-family: "GmarketSans";
+  font-size: 2rem;
+  font-weight: 900;
+  color: #134aa9;
+  position: absolute;
+  top: 400px;
+  left: 90px;
+}
+.go {
+  width: 100%;
+  height: 80px;
+  background: #eff4fe;
+  padding: 0 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -25px;
+}
+.go > a {
+  font-family: "GmarketSans";
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 80px;
+  color: #2a2e35;
+}
+
+/* section_wrap2 */
+/* 
+.section_wrap2 {
+  background: white;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+.space_wrap {
+  width: 100%;
+  background: #ffffff;
+  margin-top: 20px;
+}
+.space_wrap > .space {
+  width: 65%;
+  margin-top: 10px;
+}
+.space_wrap > .space > a {
+  display: inline-block;
+  height: 44px;
+  padding: 15px;
+  margin: 10px 3px;
+  border: 2px solid #134aa9;
+  border-radius: 100px;
+  font-family: "GmarketSans";
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #134aa9;
+}
+.space_wrap > .space > a:nth-child(1) {
+  display: inline-block;
+  height: 44px;
+  padding: 15px;
+  margin: 10px 3px;
+  border: 2px solid #134aa9;
+  border-radius: 100px;
+  font-family: "GmarketSans";
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  background: #134aa9;
+}
+.space_img {
+  width: 35%;
+  height: 300px;
+  background: url(../img/space_01.png) no-repeat;
+  background-size: 100%;
+  border-radius: 30px;
+} */
+.section_wrap2 {
+  margin-top: 100px;
+}
+.imgs {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background: #fff;
+  left: 900px;
+}
+.space_img {
+  position: absolute;
+}
+.imgs .one {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background: url(../img/space_01.png) no-repeat;
+  background-size: 100%;
+}
+.imgs .two {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background: url(../img/gunggido_logo.svg) no-repeat;
+  background-size: cover;
+}
+.imgs .three {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background: url(../img/main-logo-gray.svg) no-repeat;
+  background-size: cover;
+}
+.imgs .four {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background: url(../img/main-logo.svg) no-repeat;
+  background-size: cover;
+}
+.imgs .five {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background: url(../img/main_visual.jpg) no-repeat;
+  background-size: cover;
+}
+.imgs .six {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background: url(../img/our-center-img.svg) no-repeat;
+  background-size: cover;
+}
+.imgs .seven {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background: url(../img/snsimg1.jpg) no-repeat;
+  background-size: cover;
+}
+.imgs .eight {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background: url(../img/snsimg2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imgs .nine {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background: url(../img/snsimg3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imgs .ten {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background: url(../img/space_01.png) no-repeat;
+  background-size: cover;
+}
+input {
+  opacity: 0;
+  display: none;
+}
+label {
+  cursor: pointer;
+  display: inline-block;
+  height: 44px;
+  padding: 15px;
+  margin: 10px 3px;
+  border: 2px solid #134aa9;
+  background: white;
+  border-radius: 100px;
+  font-family: "GmarketSans";
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #134aa9;
+}
+label:hover {
+  color: white;
+  background: #134aa9;
+}
+.space_img {
+  opacity: 0;
+}
+#one:checked ~ .tab_btn label[for="one"] {
+  color: white;
+  background: #134aa9;
+}
+#two:checked ~ .tab_btn label[for="two"] {
+  color: white;
+  background: #134aa9;
+}
+#three:checked ~ .tab_btn label[for="three"] {
+  color: white;
+  background: #134aa9;
+}
+#four:checked ~ .tab_btn label[for="four"] {
+  color: white;
+  background: #134aa9;
+}
+#five:checked ~ .tab_btn label[for="five"] {
+  color: white;
+  background: #134aa9;
+}
+#six:checked ~ .tab_btn label[for="six"] {
+  color: white;
+  background: #134aa9;
+}
+#seven:checked ~ .tab_btn label[for="seven"] {
+  color: white;
+  background: #134aa9;
+}
+#eight:checked ~ .tab_btn label[for="eight"] {
+  color: white;
+  background: #134aa9;
+}
+#nine:checked ~ .tab_btn label[for="nine"] {
+  color: white;
+  background: #134aa9;
+}
+#ten:checked ~ .tab_btn label[for="ten"] {
+  color: white;
+  background: #134aa9;
+}
+.tabs {
+  position: relative;
+}
+.tab_btn {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  margin-top: 55px;
+}
+.tabs input:nth-of-type(1):checked ~ .imgs .space_img:nth-child(1) {
+  opacity: 1;
+}
+.tabs input:nth-of-type(2):checked ~ .imgs .space_img:nth-child(2) {
+  opacity: 1;
+}
+.tabs input:nth-of-type(3):checked ~ .imgs .space_img:nth-child(3) {
+  opacity: 1;
+}
+.tabs input:nth-of-type(4):checked ~ .imgs .space_img:nth-child(4) {
+  opacity: 1;
+}
+.tabs input:nth-of-type(5):checked ~ .imgs .space_img:nth-child(5) {
+  opacity: 1;
+}
+.tabs input:nth-of-type(6):checked ~ .imgs .space_img:nth-child(6) {
+  opacity: 1;
+}
+.tabs input:nth-of-type(7):checked ~ .imgs .space_img:nth-child(7) {
+  opacity: 1;
+}
+.tabs input:nth-of-type(8):checked ~ .imgs .space_img:nth-child(8) {
+  opacity: 1;
+}
+.tabs input:nth-of-type(9):checked ~ .imgs .space_img:nth-child(9) {
+  opacity: 1;
+}
+.tabs input:nth-of-type(10):checked ~ .imgs .space_img:nth-child(10) {
+  opacity: 1;
+}
+
+/* section_wrap3 */
+
+.section_wrap3 {
+  margin-top: 100px;
+}
+.text {
+  width: 60%;
+  margin-top: 50px;
+}
+.illust_wrap {
+  width: 40%;
+  height: 300px;
+  position: relative;
+}
+.manse_illust {
+  width: 90%;
+  height: 300px;
+  background: url(../img/our-center-img.svg) no-repeat;
+  background-position-y: center;
+  background-position-x: 100%;
+  background-size: 80%;
+  border-radius: 30px;
+}
+.more1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #134aa9;
+  align-self: center;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  line-height: 50px;
+  font-family: "GmarketSans";
+  font-size: 1rem;
+  font-weight: 900;
+  color: #134aa9;
+  background: white;
+}
+.more1:hover {
+  color: white;
+  background: #134aa9;
+}
+
+/* section_wrap4 */
+
+.section_wrap4 {
+  margin-top: 100px;
+  padding-top: 100px;
+  background: #eff4fe;
+}
+.section_wrap4 h5 {
+  line-height: 2rem;
+}
+.sns_wrap {
+  width: 100%;
+  height: 250px;
+  margin-top: 50px;
+  position: relative;
+}
+.sns_img_wrap {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  justify-content: space-between;
+}
+.sns_img1,
+.sns_img2,
+.sns_img3 {
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+  background: #b0b0b0;
+}
+.sns_img1 {
+  background: url(../img/snsimg1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sns_img2 {
+  background: url(../img/snsimg2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sns_img3 {
+  background: url(../img/snsimg3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.more2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #134aa9;
+  align-self: center;
+  position: absolute;
+  left: 20px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "GmarketSans";
+  font-size: 1rem;
+  font-weight: 900;
+  color: #134aa9;
+  background: rgba(255, 255, 255, 0);
+}
+.more2:hover {
+  color: white;
+  background: #134aaa;
+}
+/* section_wrap5 */
+
+.section_wrap5 {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background: #eff4fe;
+}
+.notice_wrap {
+  width: 100%;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.notice_img1,
+.notice_img2,
+.notice_img3 {
+  width: 400px;
+  height: 400px;
+  background: #ffffff;
+}
+.notice_img1:hover {
+  cursor: pointer;
+  box-shadow: 0px 10px 30px rgba(19, 74, 170, 0.1);
+}
+.notice_img2:hover {
+  cursor: pointer;
+  box-shadow: 0px 10px 30px rgba(19, 74, 170, 0.1);
+}
+.notice_img3:hover {
+  cursor: pointer;
+  box-shadow: 0px 10px 30px rgba(19, 74, 170, 0.1);
+}
+.notice_img1,
+.notice_img2,
+.notice_img3 {
+  padding: 50px;
+  position: relative;
+}
+.notice {
+  font-family: "NotoSansKR";
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ababab;
+}
+.title {
+  position: absolute;
+  width: 300px;
+  top: 90px;
+  font-family: "NotoSansKR";
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: justify;
+  color: #2a2e35;
+  line-height: 3rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sub_title {
+  position: absolute;
+  width: 300px;
+  top: 180px;
+  font-family: "NotoSansKR";
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: justify;
+  color: #787d86;
+  line-height: 2.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.date {
+  position: absolute;
+  width: 300px;
+  bottom: 50px;
+  font-family: "NotoSansKR";
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ababab;
+}
+.click {
+  position: absolute;
+  width: 300px;
+  bottom: 35px;
+  left: 315px;
+  font-family: "NotoSansKR";
+  font-size: 5rem;
+  font-weight: 100;
+  color: #9c9c9c;
+}
+.click:hover {
+  color: #424242;
+}
+
+/* footer */
+
+.footer_wrap {
+  background: #333333;
+}
+.ft_sc1 {
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+.information {
+  width: 50%;
+  justify-content: space-between;
+}
+.information li {
+  color: white;
+  font-family: "NotoSansKR";
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 80px;
+}
+.sns {
+  position: absolute;
+  left: 80%;
+}
+.sns li {
+  padding-left: 10px;
+  color: #7b7b7b;
+  font-family: "NotoSansKR";
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 80px;
+}
+.family {
+  position: absolute;
+  display: block;
+  right: 0;
+  align-self: center;
+}
+.family > li {
+  justify-content: space-between;
+}
+.family > li > span {
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid #7b7b7b;
+  color: #7b7b7b;
+  font-family: "NotoSansKR";
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.family > li > ul {
+  display: none;
+}
+.ft_sc2 {
+  border-top: 1px solid #7b7b7b;
+}
+.ft_sc2 > .ftlogo1 {
+  margin-top: 20px;
+  width: 15%;
+  height: 150px;
+  background: url(../img/main-logo-gray.svg) no-repeat;
+  background-size: 80%;
+  background-position: center;
+  margin-bottom: 20px;
+}
+.ft_sc2 > .ftlogo2 {
+  margin-top: 20px;
+  width: 15%;
+  height: 150px;
+  background: url(../img/gunggido_logo.svg) no-repeat;
+  background-size: 50%;
+  background-position: center;
+  margin-bottom: 20px;
+}
+.ft_sc2 > .fttext {
+  margin-top: 20px;
+  padding-top: 45px;
+  width: 70%;
+  height: 150px;
+  padding-left: 50px;
+  color: #7b7b7b;
+  font-family: "NotoSansKR";
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin-bottom: 20px;
+}

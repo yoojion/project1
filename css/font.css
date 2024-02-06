@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* GmarketSans */
+@font-face {
+  font-family: "GmarketSans";
+  src: url("./font/GmarketSansLight.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "GmarketSans";
+  src: url("./font/GmarketSansMedium.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "GmarketSans";
+  src: url("./font/GmarketSansBold.otf");
+  font-weight: 900;
+}
+/* NotoSansKR */
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("./font/NotoSansKR-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("./font/NotoSansKR-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("./font/NotoSansKR-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("./font/NotoSansKR-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("./font/NotoSansKR-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("./font/NotoSansKR-Black.ttf");
+  font-weight: 900;
+}
