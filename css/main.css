@@ -19,17 +19,18 @@ body {
 
 .popup {
   position: fixed;
-  width: min(50%, 530px);
+  width: min(50%, 470px);
   padding: 4% 4%;
   font-size: 1.8rem;
   line-height: 1.75;
-  background-color: #fff;
+  background-color: #ffffffd4;
   z-index: 9999999;
   top: 10%;
-  left: 43%;
+  left: 39%;
   font-weight: 600;
   box-shadow:  0 0 15px rgba(0,0,0,.4);
   border-radius: 22px;
+  text-align: justify;
 }
 .popup > span {
   user-select: none;
@@ -39,10 +40,13 @@ body {
   height: 35px;
   background-color: #134aa9;
   padding: 1% 4%;
-  right: 10%;
+  right: 7%;
   bottom: 10%;
   color: #fff;
   border-radius: 300px;
+}
+.popup > b {
+  color: #134aa9;
 }
 
 /* header */
