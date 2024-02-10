@@ -26,12 +26,13 @@ h5 {
   font-weight: 400;
   line-height: 2.5rem;
   color: #2a2e35;
+  margin-top: 0.7rem;
 }
 
 /* popup */
 
 .popup {
-  width: min(50%, 470px);
+  width: min(50%, 450px);
   padding: 4% 4%;
   background-color: #ffffffd4;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -40,8 +41,9 @@ h5 {
   text-align: justify;
   border-radius: 22px;
   position: fixed;
-  top: 10%;
-  left: 39%;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
   z-index: 9999999;
 }
 .popup > span {
@@ -66,7 +68,7 @@ h5 {
 .menu_wrap {
   background: white;
   width: 100%;
-  height: 100px;
+  height: 10rem;
 }
 .logo {
   width: 10%;
@@ -86,7 +88,7 @@ nav > .gnb > li > a {
   font-family: "GmarketSans";
   font-size: 2.1rem;
   font-weight: 900;
-  line-height: 100px;
+  line-height: 10rem;
   color: #134aa9;
   position: relative;
 }
@@ -94,12 +96,12 @@ nav .hover1::before {
   font-family: "GmarketSans";
   font-size: 2.1rem;
   font-weight: 900;
-  line-height: 100px;
-  color: #ff458c;
-  content: "경기생활문화센터";
+  line-height: 10rem;
+  color: #001d4e;
   position: absolute;
-  left: 0;
+  content: "경기생활문화센터";
   overflow: hidden;
+  left: 0;
   width: 0%;
   transition: all 0.3s;
 }
@@ -110,12 +112,12 @@ nav .hover2::before {
   font-family: "GmarketSans";
   font-size: 2.1rem;
   font-weight: 900;
-  line-height: 100px;
-  color: #ff458c;
+  line-height: 10rem;
+  color: #001d4e;
   position: absolute;
-  left: 0;
   content: "경기도생활문화";
   overflow: hidden;
+  left: 0;
   width: 0%;
   transition: all 0.3s;
 }
@@ -126,12 +128,12 @@ nav .hover3::before {
   font-family: "GmarketSans";
   font-size: 2.1rem;
   font-weight: 900;
-  line-height: 100px;
-  color: #ff458c;
+  line-height: 10rem;
+  color: #001d4e;
   position: absolute;
-  left: 0;
   content: "기록자료";
   overflow: hidden;
+  left: 0;
   width: 0%;
   transition: all 0.3s;
 }
@@ -142,12 +144,12 @@ nav .hover4::before {
   font-family: "GmarketSans";
   font-size: 2.1rem;
   font-weight: 900;
-  line-height: 100px;
-  color: #ff458c;
+  line-height: 10rem;
+  color: #001d4e;
   position: absolute;
-  left: 0;
   content: "웹진";
   overflow: hidden;
+  left: 0;
   width: 0%;
   transition: all 0.3s;
 }
@@ -158,12 +160,12 @@ nav .hover5::before {
   font-family: "GmarketSans";
   font-size: 2.1rem;
   font-weight: 900;
-  line-height: 100px;
-  color: #ff458c;
+  line-height: 10rem;
+  color: #001d4e;
   position: absolute;
-  left: 0;
   content: "소통";
   overflow: hidden;
+  left: 0;
   width: 0%;
   transition: all 0.3s;
 }
@@ -181,143 +183,148 @@ nav .hover5:hover:before {
   font-size: 1.4rem;
   color: #134aa9;
 }
+.login:hover:before {
+  position: absolute;
+  content: "";
+  width: 5.7rem;
+  height: 0.1rem;
+  background-color: #134aa9;
+  top: 6rem;
+}
+.search:hover:before {
+  position: absolute;
+  content: "";
+  width: 4.6rem;
+  height: 0.1rem;
+  background-color: #134aa9;
+  top: 6rem;
+}
+.schedule:hover:before {
+  position: absolute;
+  content: "";
+  width: 4.4rem;
+  height: 0.1rem;
+  background-color: #134aa9;
+  top: 6rem;
+}
 
 /* main */
+
 /* section_wrap1 */
 
-.section_wrap1 {
-  background: white;
-  width: 100%;
-  position: relative;
-}
 .main_banner {
   width: 100%;
-  height: 470px;
-  background: url(../img/main_visual.jpg) no-repeat top/cover;
+  height: 70rem;
+  background-image: url(../img/main_visual.jpg);
+  background-repeat: no-repeat;
+  background-size: 180%;
 }
 .main_banner > .inner {
   position: relative;
 }
-.main_banner > .inner > h4 {
+.main_banner > .inner > .banner_text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main_banner > .inner > .banner_text > h4 {
   font-family: "GmarketSans";
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
   color: #134aa9;
-  position: absolute;
-  top: 180px;
 }
-.main_banner > .inner > h2 {
+.main_banner > .inner > .banner_text > h2 {
   font-family: "GmarketSans";
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 600;
   color: #134aa9;
-  position: absolute;
-  top: 215px;
+  margin-top: -1.5rem;
 }
-.main_banner > .inner > .bar {
-  width: 70px;
-  height: 3px;
-  display: block;
+.main_banner > .inner > .banner_num {
+  position: relative;
+  align-items: center;
+  top: 80%;
+}
+.main_banner > .inner > .banner_num > .bar {
+  width: 7.4rem;
+  height: 0.3rem;
   background: #134aa9;
-  position: absolute;
   content: "";
-  top: 406px;
 }
-.main_banner > .inner > .no {
+.main_banner > .inner > .banner_num > .no {
   font-family: "GmarketSans";
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 900;
   color: #134aa9;
-  position: absolute;
-  top: 400px;
-  left: 90px;
 }
-.go {
+.main_banner > .inner > .go {
   width: 100%;
-  height: 80px;
+  height: 13rem;
   background: #eff4fe;
-  padding: 0 50px;
+  padding: 0 10rem;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: -25px;
+  top: 60rem;
 }
-.go > a {
+.main_banner > .inner > .go > a {
   font-family: "GmarketSans";
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 900;
-  line-height: 80px;
   color: #2a2e35;
+}
+.main_banner > .inner > .go > a:hover {
+  color: #134aa9;
 }
 
 /* section_wrap2 */
-/* 
+
 .section_wrap2 {
-  background: white;
+  margin-top: 20rem;
+}
+.section_wrap2 .tabs {
   width: 100%;
-  position: relative;
-  margin-top: 50px;
+  height: 38rem;
 }
-.space_wrap {
-  width: 100%;
-  background: #ffffff;
-  margin-top: 20px;
+.section_wrap2 .tabs input {
+  opacity: 0;
+  display: none;
 }
-.space_wrap > .space {
-  width: 65%;
-  margin-top: 10px;
+.section_wrap2 .tabs .tab_btn {
+  width: 60%;
+  margin-top: 6rem;
 }
-.space_wrap > .space > a {
+.section_wrap2 .tabs .tab_btn label {
+  cursor: pointer;
   display: inline-block;
-  height: 44px;
-  padding: 15px;
-  margin: 10px 3px;
+  height: 7.5rem;
+  line-height: 7.5rem;
+  padding: 0 3.5rem;
+  margin-bottom: 2.5rem;
+  margin-right: 1rem;
   border: 2px solid #134aa9;
-  border-radius: 100px;
+  background: white;
+  border-radius: 30rem;
   font-family: "GmarketSans";
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #134aa9;
 }
-.space_wrap > .space > a:nth-child(1) {
-  display: inline-block;
-  height: 44px;
-  padding: 15px;
-  margin: 10px 3px;
-  border: 2px solid #134aa9;
-  border-radius: 100px;
-  font-family: "GmarketSans";
-  font-size: 1.5rem;
-  font-weight: 600;
+.section_wrap2 .tabs .tab_btn label:hover {
   color: white;
   background: #134aa9;
 }
-.space_img {
-  width: 35%;
-  height: 300px;
-  background: url(../img/space_01.png) no-repeat;
-  background-size: 100%;
-  border-radius: 30px;
-} */
-.section_wrap2 {
-  margin-top: 100px;
-}
-.imgs {
-  position: relative;
-  width: 500px;
-  height: 300px;
-  border-radius: 30px;
-  background: #fff;
-  left: 900px;
+.section_wrap2 .tabs .imgs {
+  width: 40%;
 }
 .space_img {
   position: absolute;
-}
-.space_img {
-  width: 560px;
-  height: 380px;
-  border-radius: 22px;
+  width: 56rem;
+  height: 38rem;
+  border-radius: 2.2rem;
   background: no-repeat;
+  opacity: 0;
 }
 .imgs .one {
   background-image: url(../img/space_01.png);
@@ -359,32 +366,7 @@ nav .hover5:hover:before {
   background-image: url(../img/space_10.png);
   background-size: 100%;
 }
-input {
-  opacity: 0;
-  display: none;
-}
-label {
-  cursor: pointer;
-  display: inline-block;
-  height: 75px;
-  line-height: 75px;
-  padding: 0 35px;
-  margin: 10px 3px;
-  border: 2px solid #134aa9;
-  background: white;
-  border-radius: 300px;
-  font-family: "GmarketSans";
-  font-size: 2rem;
-  font-weight: 600;
-  color: #134aa9;
-}
-label:hover {
-  color: white;
-  background: #134aa9;
-}
-.space_img {
-  opacity: 0;
-}
+
 #one:checked ~ .tab_btn label[for="one"] {
   color: white;
   background: #134aa9;
@@ -425,15 +407,7 @@ label:hover {
   color: white;
   background: #134aa9;
 }
-.tabs {
-  position: relative;
-}
-.tab_btn {
-  position: absolute;
-  left: 0;
-  width: 40%;
-  margin-top: 55px;
-}
+
 .tabs input:nth-of-type(1):checked ~ .imgs .space_img:nth-child(1) {
   opacity: 1;
 }
