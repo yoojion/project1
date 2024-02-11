@@ -446,8 +446,6 @@ nav .hover5:hover:before {
 .section_wrap3 {
   margin-top: 230px;
 }
-.section_wrap3 .inner {
-}
 .text {
   width: 60%;
   margin-top: 50px;
@@ -456,6 +454,7 @@ nav .hover5:hover:before {
   width: 40%;
   height: 100%;
   position: relative;
+  z-index: 2;
 }
 .manse_illust {
   width: 80%;
@@ -568,6 +567,7 @@ nav .hover5:hover:before {
   padding: 50px 40px 66px;
   background: #ffffff;
   position: relative;
+  z-index: 2;
 }
 .notice_img1:hover {
   cursor: pointer;
@@ -639,6 +639,58 @@ nav .hover5:hover:before {
 }
 .click:hover {
   color: #787d86;
+}
+
+/* bg */
+.bg1 {
+  position: absolute;
+  background-image: url(../img/deco1.png);
+  width: 456px;
+  height: 456px;
+  top: 1600px;
+  left: 65%;
+  z-index: 1;
+}
+.bg2 {
+  position: absolute;
+  background-image: url(../img/deco2.png);
+  background-repeat: no-repeat;
+  width: 470px;
+  height: 470px;
+  top: 2300px;
+  left: -20px;
+  z-index: 1;
+}
+.bg3 {
+  position: absolute;
+  background-image: url(../img/deco3.png);
+  background-repeat: no-repeat;
+  width: 470px;
+  height: 470px;
+  top: 3350px;
+  right: -70px;
+  z-index: 1;
+}
+
+/* up_btn */
+
+.up_btn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #134aa9;
+  border-radius: 100%;
+  z-index: 3;
+}
+.up_btn i {
+  color: white;
+  font-size: 20px;
+  display: block;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
 }
 
 /* footer */
