@@ -541,6 +541,7 @@ nav .hover5:hover:before {
   font-weight: 900;
   color: #134aa9;
   background: #ffffff00;
+  z-index: 555;
 }
 .more2:hover {
   color: white;
