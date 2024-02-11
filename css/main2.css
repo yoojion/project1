@@ -15,28 +15,28 @@ body {
 }
 h3 {
   font-family: "GmarketSans";
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 900;
-  line-height: 53px;
+  line-height: 5.3rem;
   color: #2a2e35;
 }
 h5 {
   font-family: "NotoSansKR";
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 2.5rem;
   color: #2a2e35;
-  margin-top: 7px;
+  margin-top: 0.7rem;
 }
 
 /* popup */
 
 .popup {
-  width: min(50%, 470px);
+  width: min(50%, 450px);
   padding: 4% 4%;
   background-color: #ffffffd4;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: justify;
   border-radius: 22px;
@@ -50,7 +50,6 @@ h5 {
   user-select: none;
   cursor: pointer;
   height: 35px;
-  font-size: 16px;
   padding: 1% 4%;
   background-color: #134aa9;
   border-radius: 300px;
@@ -69,14 +68,14 @@ h5 {
 .menu_wrap {
   background: white;
   width: 100%;
-  height: 100px;
+  height: 10rem;
 }
 .logo {
   width: 10%;
   height: 100%;
 }
 .logo > img {
-  width: 90%;
+  width: 100%;
   height: 100%;
 }
 nav {
@@ -87,17 +86,17 @@ nav > .gnb {
 }
 nav > .gnb > li > a {
   font-family: "GmarketSans";
-  font-size: 21px;
+  font-size: 2.1rem;
   font-weight: 900;
-  line-height: 100px;
+  line-height: 10rem;
   color: #134aa9;
   position: relative;
 }
 nav .hover1::before {
   font-family: "GmarketSans";
-  font-size: 21px;
+  font-size: 2.1rem;
   font-weight: 900;
-  line-height: 100px;
+  line-height: 10rem;
   color: #001d4e;
   position: absolute;
   content: "경기생활문화센터";
@@ -111,9 +110,9 @@ nav .hover1:hover:before {
 }
 nav .hover2::before {
   font-family: "GmarketSans";
-  font-size: 21px;
+  font-size: 2.1rem;
   font-weight: 900;
-  line-height: 100px;
+  line-height: 10rem;
   color: #001d4e;
   position: absolute;
   content: "경기도생활문화";
@@ -127,9 +126,9 @@ nav .hover2:hover:before {
 }
 nav .hover3::before {
   font-family: "GmarketSans";
-  font-size: 21px;
+  font-size: 2.1rem;
   font-weight: 900;
-  line-height: 100px;
+  line-height: 10rem;
   color: #001d4e;
   position: absolute;
   content: "기록자료";
@@ -143,9 +142,9 @@ nav .hover3:hover:before {
 }
 nav .hover4::before {
   font-family: "GmarketSans";
-  font-size: 21px;
+  font-size: 2.1rem;
   font-weight: 900;
-  line-height: 100px;
+  line-height: 10rem;
   color: #001d4e;
   position: absolute;
   content: "웹진";
@@ -159,9 +158,9 @@ nav .hover4:hover:before {
 }
 nav .hover5::before {
   font-family: "GmarketSans";
-  font-size: 21px;
+  font-size: 2.1rem;
   font-weight: 900;
-  line-height: 100px;
+  line-height: 10rem;
   color: #001d4e;
   position: absolute;
   content: "소통";
@@ -181,32 +180,32 @@ nav .hover5:hover:before {
 }
 .lss > a {
   font-family: "NotoSansKR";
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #134aa9;
 }
 .login:hover:before {
   position: absolute;
   content: "";
-  width: 57px;
-  height: 1px;
+  width: 5.7rem;
+  height: 0.1rem;
   background-color: #134aa9;
-  top: 60px;
+  top: 6rem;
 }
 .search:hover:before {
   position: absolute;
   content: "";
-  width: 46px;
-  height: 1px;
+  width: 4.6rem;
+  height: 0.1rem;
   background-color: #134aa9;
-  top: 60px;
+  top: 6rem;
 }
 .schedule:hover:before {
   position: absolute;
   content: "";
-  width: 46px;
-  height: 1px;
+  width: 4.4rem;
+  height: 0.1rem;
   background-color: #134aa9;
-  top: 60px;
+  top: 6rem;
 }
 
 /* main */
@@ -215,10 +214,10 @@ nav .hover5:hover:before {
 
 .main_banner {
   width: 100%;
-  height: 700px;
+  height: 70rem;
   background-image: url(../img/main_visual.jpg);
   background-repeat: no-repeat;
-  background-size: 155%;
+  background-size: 180%;
 }
 .main_banner > .inner {
   position: relative;
@@ -231,16 +230,16 @@ nav .hover5:hover:before {
 }
 .main_banner > .inner > .banner_text > h4 {
   font-family: "GmarketSans";
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 600;
   color: #134aa9;
 }
 .main_banner > .inner > .banner_text > h2 {
   font-family: "GmarketSans";
-  font-size: 80px;
+  font-size: 8rem;
   font-weight: 600;
   color: #134aa9;
-  margin-top: -10px;
+  margin-top: -1.5rem;
 }
 .main_banner > .inner > .banner_num {
   position: relative;
@@ -248,30 +247,30 @@ nav .hover5:hover:before {
   top: 80%;
 }
 .main_banner > .inner > .banner_num > .bar {
-  width: 74px;
-  height: 3px;
+  width: 7.4rem;
+  height: 0.3rem;
   background: #134aa9;
   content: "";
 }
 .main_banner > .inner > .banner_num > .no {
   font-family: "GmarketSans";
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 900;
   color: #134aa9;
 }
 .main_banner > .inner > .go {
   width: 100%;
-  height: 130px;
+  height: 13rem;
   background: #eff4fe;
-  padding: 0 80px;
+  padding: 0 10rem;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: 600px;
+  top: 60rem;
 }
 .main_banner > .inner > .go > a {
   font-family: "GmarketSans";
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 900;
   color: #2a2e35;
 }
@@ -282,11 +281,11 @@ nav .hover5:hover:before {
 /* section_wrap2 */
 
 .section_wrap2 {
-  margin-top: 230px;
+  margin-top: 20rem;
 }
 .section_wrap2 .tabs {
   width: 100%;
-  height: 380px;
+  height: 38rem;
 }
 .section_wrap2 .tabs input {
   opacity: 0;
@@ -294,22 +293,21 @@ nav .hover5:hover:before {
 }
 .section_wrap2 .tabs .tab_btn {
   width: 60%;
-  margin-top: 50px;
-  padding-right: 130px;
+  margin-top: 6rem;
 }
 .section_wrap2 .tabs .tab_btn label {
   cursor: pointer;
   display: inline-block;
-  height: 75px;
-  line-height: 75px;
-  padding: 0 30px;
-  margin-bottom: 20px;
-  margin-right: 10px;
+  height: 7.5rem;
+  line-height: 7.5rem;
+  padding: 0 3.5rem;
+  margin-bottom: 2.5rem;
+  margin-right: 1rem;
   border: 2px solid #134aa9;
   background: white;
-  border-radius: 300px;
+  border-radius: 30rem;
   font-family: "GmarketSans";
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   color: #134aa9;
 }
@@ -322,9 +320,9 @@ nav .hover5:hover:before {
 }
 .space_img {
   position: absolute;
-  width: 560px;
-  height: 380px;
-  border-radius: 22px;
+  width: 56rem;
+  height: 38rem;
+  border-radius: 2.2rem;
   background: no-repeat;
   opacity: 0;
 }
@@ -444,9 +442,7 @@ nav .hover5:hover:before {
 /* section_wrap3 */
 
 .section_wrap3 {
-  margin-top: 230px;
-}
-.section_wrap3 .inner {
+  margin-top: 100px;
 }
 .text {
   width: 60%;
@@ -454,27 +450,30 @@ nav .hover5:hover:before {
 }
 .illust_wrap {
   width: 40%;
-  height: 100%;
+  height: 300px;
   position: relative;
 }
 .manse_illust {
-  width: 80%;
-  height: 250px;
+  width: 90%;
+  height: 300px;
   background: url(../img/our-center-img.svg) no-repeat;
-  background-position: center;
+  background-position-y: center;
+  background-position-x: 100%;
+  background-size: 80%;
+  border-radius: 30px;
 }
 .more1 {
-  width: 95px;
-  height: 95px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   border: 1px solid #134aa9;
   align-self: center;
   position: absolute;
   right: 0;
   text-align: center;
-  line-height: 95px;
+  line-height: 50px;
   font-family: "GmarketSans";
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 900;
   color: #134aa9;
   background: white;
@@ -487,9 +486,12 @@ nav .hover5:hover:before {
 /* section_wrap4 */
 
 .section_wrap4 {
-  margin-top: 115px;
-  padding-top: 115px;
+  margin-top: 100px;
+  padding-top: 100px;
   background: #eff4fe;
+}
+.section_wrap4 h5 {
+  line-height: 2rem;
 }
 .sns_wrap {
   width: 100%;
@@ -499,7 +501,6 @@ nav .hover5:hover:before {
 }
 .sns_img_wrap {
   width: 60%;
-  height: 100%;
   position: absolute;
   right: 0;
   justify-content: space-between;
@@ -509,7 +510,7 @@ nav .hover5:hover:before {
 .sns_img3 {
   width: 250px;
   height: 250px;
-  border-radius: 22px;
+  border-radius: 30px;
   background: #b0b0b0;
 }
 .sns_img1 {
@@ -528,31 +529,30 @@ nav .hover5:hover:before {
   background-position: center;
 }
 .more2 {
-  width: 95px;
-  height: 95px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   border: 1px solid #134aa9;
   align-self: center;
   position: absolute;
-  left: 0;
+  left: 20px;
   text-align: center;
-  line-height: 95px;
+  line-height: 50px;
   font-family: "GmarketSans";
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 900;
   color: #134aa9;
-  background: #ffffff00;
+  background: rgba(255, 255, 255, 0);
 }
 .more2:hover {
   color: white;
   background: #134aaa;
 }
-
 /* section_wrap5 */
 
 .section_wrap5 {
-  padding-top: 230px;
-  padding-bottom: 230px;
+  padding-top: 100px;
+  padding-bottom: 200px;
   background: #eff4fe;
 }
 .notice_wrap {
@@ -563,11 +563,9 @@ nav .hover5:hover:before {
 .notice_img1,
 .notice_img2,
 .notice_img3 {
-  width: 415px;
-  height: 445px;
-  padding: 50px 40px 66px;
+  width: 400px;
+  height: 400px;
   background: #ffffff;
-  position: relative;
 }
 .notice_img1:hover {
   cursor: pointer;
@@ -581,23 +579,28 @@ nav .hover5:hover:before {
   cursor: pointer;
   box-shadow: 0px 10px 30px rgba(19, 74, 170, 0.1);
 }
-
+.notice_img1,
+.notice_img2,
+.notice_img3 {
+  padding: 50px;
+  position: relative;
+}
 .notice {
   font-family: "NotoSansKR";
-  font-size: 18px;
+  font-size: 2rem;
   font-weight: 400;
   color: #ababab;
 }
 .title {
   position: absolute;
-  width: 335px;
+  width: 300px;
   top: 90px;
   font-family: "NotoSansKR";
-  font-size: 28px;
-  line-height: 40px;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 600;
   text-align: justify;
   color: #2a2e35;
+  line-height: 3rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -606,14 +609,14 @@ nav .hover5:hover:before {
 }
 .sub_title {
   position: absolute;
-  width: 335px;
-  top: 220px;
+  width: 300px;
+  top: 180px;
   font-family: "NotoSansKR";
-  font-size: 18px;
-  line-height: 33px;
+  font-size: 2rem;
   font-weight: 400;
   text-align: justify;
   color: #787d86;
+  line-height: 2.5rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -622,23 +625,25 @@ nav .hover5:hover:before {
 }
 .date {
   position: absolute;
-  bottom: 66px;
+  width: 300px;
+  bottom: 50px;
   font-family: "NotoSansKR";
-  font-size: 13px;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #ababab;
 }
 .click {
   position: absolute;
-  bottom: 50px;
-  right: 40px;
+  width: 300px;
+  bottom: 35px;
+  left: 315px;
   font-family: "NotoSansKR";
   font-size: 5rem;
   font-weight: 100;
-  color: #ababab;
+  color: #9c9c9c;
 }
 .click:hover {
-  color: #787d86;
+  color: #424242;
 }
 
 /* footer */
@@ -648,85 +653,87 @@ nav .hover5:hover:before {
 }
 .ft_sc1 {
   width: 100%;
-  height: 96px;
+  height: 80px;
   position: relative;
-}
-.ft_sc2 {
-  width: 100%;
-  height: 180px;
-  position: relative;
-}
-.ft_sc2 {
-  border-top: 1px solid #7b7b7b;
 }
 .information {
-  position: absolute;
-  left: 0;
+  width: 50%;
+  justify-content: space-between;
 }
 .information li {
   color: white;
   font-family: "NotoSansKR";
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: 96px;
-  padding-right: 30px;
+  text-align: center;
+  line-height: 80px;
 }
 .sns {
   position: absolute;
-  left: 70%;
+  left: 80%;
 }
 .sns li {
-  padding-left: 25px;
+  padding-left: 10px;
   color: #7b7b7b;
   font-family: "NotoSansKR";
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: 96px;
+  text-align: center;
+  line-height: 80px;
 }
 .family {
   position: absolute;
+  display: block;
   right: 0;
   align-self: center;
 }
-.family span {
-  width: 195px;
-  height: 40px;
-  border: 1px solid #7b7b7b;
-  padding: 0 13px;
+.family > li {
   justify-content: space-between;
-  align-items: center;
+}
+.family > li > span {
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid #7b7b7b;
   color: #7b7b7b;
   font-family: "NotoSansKR";
-  font-size: 14px;
+  font-size: 1.5rem;
   font-weight: 600;
+  text-align: center;
 }
-.family2 {
+.family > li > ul {
   display: none;
 }
 .ft_sc2 {
-  align-items: center;
+  border-top: 1px solid #7b7b7b;
 }
 .ft_sc2 > .ftlogo1 {
+  margin-top: 20px;
   width: 15%;
-  height: 80px;
+  height: 150px;
   background: url(../img/main-logo-gray.svg) no-repeat;
   background-size: 80%;
   background-position: center;
-  opacity: 0.5;
+  margin-bottom: 20px;
 }
 .ft_sc2 > .ftlogo2 {
-  width: 10%;
-  height: 80px;
+  margin-top: 20px;
+  width: 15%;
+  height: 150px;
   background: url(../img/gunggido_logo.svg) no-repeat;
-  background-size: 70%;
+  background-size: 50%;
   background-position: center;
-  opacity: 0.5;
+  margin-bottom: 20px;
 }
 .ft_sc2 > .fttext {
-  height: 80px;
+  margin-top: 20px;
+  padding-top: 45px;
+  width: 70%;
+  height: 150px;
+  padding-left: 50px;
   color: #7b7b7b;
   font-family: "NotoSansKR";
-  font-size: 14px;
+  font-size: 1.5rem;
   font-weight: 300;
-  padding-left: 50px;
+  line-height: 2.5rem;
+  margin-bottom: 20px;
 }
