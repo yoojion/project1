@@ -91,20 +91,28 @@ h5 {
   background: white;
   width: 100%;
   height: 100px;
+  position: relative;
+  overflow: hidden;
 }
-.logo {
-  width: 10%;
-  height: 100%;
+.menu_wrap :after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 200px;
+  background: #eff4fe;
+  top: 100px;
+  left: 0;
 }
-.logo > img {
-  width: 90%;
-  height: 100%;
+nav:hover {
+  height: 200px;
 }
 nav {
   width: 75%;
 }
 nav > .gnb {
-  justify-content: space-evenly;
+  margin: 0 85px;
+  justify-content: space-between;
+  height: 100%;
 }
 nav > .gnb > li > a {
   font-family: "GmarketSans";
@@ -112,9 +120,20 @@ nav > .gnb > li > a {
   font-weight: 900;
   line-height: 100px;
   color: #134aa9;
-  position: relative;
 }
-nav .hover1::before {
+.dep2 {
+  position: absolute;
+  z-index: 2;
+}
+.dep2 a {
+  font-family: "NotoSansKR";
+  font-size: 18px;
+  font-weight: 400;
+  color: #2a2e35;
+  display: block;
+  margin-top: 10px;
+}
+.hover1::before {
   font-family: "GmarketSans";
   font-size: 21px;
   font-weight: 900;
@@ -123,14 +142,13 @@ nav .hover1::before {
   position: absolute;
   content: "경기생활문화센터";
   overflow: hidden;
-  left: 0;
   width: 0%;
   transition: all 0.3s;
 }
-nav .hover1:hover:before {
+.hover1:hover:before {
   width: 100%;
 }
-nav .hover2::before {
+.hover2::before {
   font-family: "GmarketSans";
   font-size: 21px;
   font-weight: 900;
@@ -139,14 +157,13 @@ nav .hover2::before {
   position: absolute;
   content: "경기도생활문화";
   overflow: hidden;
-  left: 0;
   width: 0%;
   transition: all 0.3s;
 }
-nav .hover2:hover:before {
+.hover2:hover:before {
   width: 100%;
 }
-nav .hover3::before {
+.hover3::before {
   font-family: "GmarketSans";
   font-size: 21px;
   font-weight: 900;
@@ -155,14 +172,13 @@ nav .hover3::before {
   position: absolute;
   content: "기록자료";
   overflow: hidden;
-  left: 0;
   width: 0%;
   transition: all 0.3s;
 }
-nav .hover3:hover:before {
+.hover3:hover:before {
   width: 100%;
 }
-nav .hover4::before {
+.hover4::before {
   font-family: "GmarketSans";
   font-size: 21px;
   font-weight: 900;
@@ -171,14 +187,13 @@ nav .hover4::before {
   position: absolute;
   content: "웹진";
   overflow: hidden;
-  left: 0;
   width: 0%;
   transition: all 0.3s;
 }
-nav .hover4:hover:before {
+.hover4:hover:before {
   width: 100%;
 }
-nav .hover5::before {
+.hover5::before {
   font-family: "GmarketSans";
   font-size: 21px;
   font-weight: 900;
@@ -187,12 +202,19 @@ nav .hover5::before {
   position: absolute;
   content: "소통";
   overflow: hidden;
-  left: 0;
   width: 0%;
   transition: all 0.3s;
 }
-nav .hover5:hover:before {
+.hover5:hover:before {
   width: 100%;
+}
+.logo {
+  width: 10%;
+  height: 100%;
+}
+.logo > img {
+  width: 90%;
+  height: 100%;
 }
 .lss {
   width: 15%;
@@ -229,7 +251,6 @@ nav .hover5:hover:before {
   background-color: #134aa9;
   top: 60px;
 }
-
 /* main */
 
 /* section_wrap1 */
