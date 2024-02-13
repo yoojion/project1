@@ -32,7 +32,7 @@ h5 {
 /* popup */
 
 .popup {
-  width: min(50%, 450px);
+  width: min(50%, 470px);
   padding: 4% 4%;
   background-color: #ffffffd4;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -85,29 +85,31 @@ h5 {
   line-height: 50px;
 }
 
-
 /* header */
 
 .menu_wrap {
   background: white;
   width: 100%;
   position: relative;
+  height: 100px;
+  overflow: hidden;
 }
-.menu_wrap :after {
+.menu_wrap:hover {
+	overflow: visible;
+}
+.menu_wrap:after {
   position: absolute;
   content: "";
   width: 100%;
-  height: 200px;
+  height: 220px;
   background: #eff4fe;
   top: 100px;
   left: 0;
+  z-index: 55;
 }
 .menu nav {
   width: 75%;
   height: 100px;
-}
-nav:hover {
-  height: 200px;
 }
 nav > .gnb {
   margin: 0 85px;
@@ -123,7 +125,7 @@ nav > .gnb > li > a {
 }
 .dep2 {
   position: absolute;
-  z-index: 2;
+  z-index: 222222;
 }
 .dep2 a {
   font-family: "NotoSansKR";
@@ -131,7 +133,27 @@ nav > .gnb > li > a {
   font-weight: 400;
   color: #2a2e35;
   display: block;
-  margin-top: 10px;
+  margin-top: 17px;
+  position: relative;
+}
+.dep2 a::after{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background: #134aa9;
+  top:14px;
+  margin-left: 7px;
+  opacity: 0;
+}
+.dep2 a:hover:after{
+  opacity: 1;
+}
+.dep2 a:hover{
+  content: "";
+  color: #134aa9;
+  font-weight: 600;
 }
 .hover1::before {
   font-family: "GmarketSans";
@@ -252,6 +274,11 @@ nav > .gnb > li > a {
   top: 60px;
 }
 /* main */
+
+main{
+  position: relative;
+  overflow: hidden;
+}
 
 /* section_wrap1 */
 
@@ -518,7 +545,7 @@ nav > .gnb > li > a {
   font-size: 14px;
   font-weight: 900;
   color: #134aa9;
-  background: white;
+  background: rgba(255, 255, 255, 0);
 }
 .more1:hover {
   color: white;
@@ -691,7 +718,7 @@ nav > .gnb > li > a {
   background-image: url(../img/deco1.png);
   width: 456px;
   height: 456px;
-  top: 1600px;
+  top: 1500px;
   left: 65%;
   z-index: 1;
 }
