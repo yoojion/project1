@@ -95,7 +95,7 @@ h5 {
   overflow: hidden;
 }
 .menu_wrap:hover {
-	overflow: visible;
+  overflow: visible;
 }
 .menu_wrap:after {
   position: absolute;
@@ -136,21 +136,21 @@ nav > .gnb > li > a {
   margin-top: 17px;
   position: relative;
 }
-.dep2 a::after{
+.dep2 a::after {
   content: "";
   position: absolute;
   width: 6px;
   height: 6px;
   border-radius: 100%;
   background: #134aa9;
-  top:14px;
+  top: 14px;
   margin-left: 7px;
   opacity: 0;
 }
-.dep2 a:hover:after{
+.dep2 a:hover:after {
   opacity: 1;
 }
-.dep2 a:hover{
+.dep2 a:hover {
   content: "";
   color: #134aa9;
   font-weight: 600;
@@ -275,7 +275,7 @@ nav > .gnb > li > a {
 }
 /* main */
 
-main{
+main {
   position: relative;
   overflow: hidden;
 }
