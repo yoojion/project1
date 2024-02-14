@@ -94,7 +94,10 @@ h5 {
   height: 100px;
   overflow: hidden;
 }
-.menu_wrap:hover {
+/* .menu_wrap:hover {
+  overflow: visible;
+} */
+nav>ul>li>a:hover {
   overflow: visible;
 }
 .menu_wrap:after {
@@ -268,7 +271,7 @@ nav > .gnb > li > a {
 .schedule:hover:before {
   position: absolute;
   content: "";
-  width: 46px;
+  width: 43px;
   height: 1px;
   background-color: #134aa9;
   top: 60px;
