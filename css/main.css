@@ -94,12 +94,9 @@ h5 {
   height: 100px;
   overflow: hidden;
 }
-/* .menu_wrap:hover {
+.menu_wrap:hover {
   overflow: visible;
-} */
-.gnb li>a:hover{
-  overflow: visible;
-} 
+}
 .menu_wrap:after {
   position: absolute;
   content: "";
