@@ -97,9 +97,9 @@ h5 {
 /* .menu_wrap:hover {
   overflow: visible;
 } */
-nav>ul>li>a:hover {
+.gnb li>a:hover{
   overflow: visible;
-}
+} 
 .menu_wrap:after {
   position: absolute;
   content: "";
