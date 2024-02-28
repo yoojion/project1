@@ -249,29 +249,8 @@ nav > .gnb > li > a {
   font-size: 14px;
   color: #134aa9;
 }
-.login:hover:before {
-  position: absolute;
-  content: "";
-  width: 57px;
-  height: 1px;
-  background-color: #134aa9;
-  top: 60px;
-}
-.search:hover:before {
-  position: absolute;
-  content: "";
-  width: 46px;
-  height: 1px;
-  background-color: #134aa9;
-  top: 60px;
-}
-.schedule:hover:before {
-  position: absolute;
-  content: "";
-  width: 43px;
-  height: 1px;
-  background-color: #134aa9;
-  top: 60px;
+.lss > a:hover {
+  border-bottom: 1px solid #134aa9;
 }
 /* main */
 
@@ -638,9 +617,10 @@ main {
   background: #ffffff;
   position: relative;
   z-index: 2;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 .notice_img1:hover {
-  cursor: pointer;
   box-shadow: 0px 10px 30px rgba(19, 74, 170, 0.1);
 }
 .notice_img2:hover {
@@ -721,6 +701,20 @@ main {
   top: 1500px;
   left: 65%;
   z-index: 1;
+  animation-name: movel1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes movel1 {
+  0% {
+    top: 1500px;
+    left: 65%;
+  }
+  100% {
+    top: 1650px;
+    left: 70%;
+  }
 }
 .bg2 {
   position: absolute;
@@ -731,6 +725,18 @@ main {
   top: 2300px;
   left: -20px;
   z-index: 1;
+  animation-name: move2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes move2 {
+  0% {
+    top: 2100px;
+  }
+  100% {
+    top: 2200px;
+  }
 }
 .bg3 {
   position: absolute;
@@ -741,6 +747,18 @@ main {
   top: 3350px;
   right: -70px;
   z-index: 1;
+  animation-name: move3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes move3 {
+  0% {
+    top: 95%;
+  }
+  100% {
+    top: 90%;
+  }
 }
 
 /* footer */
