@@ -45,6 +45,11 @@ h5 {
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 9999999;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.popup.off {
+  opacity: 0;
 }
 .popup > span {
   user-select: none;
@@ -260,16 +265,40 @@ main {
 }
 
 /* section_wrap1 */
-
+.section_wrap1 {
+  position: relative;
+}
 .main_banner {
   width: 100%;
   height: 700px;
-  background-image: url(../img/main_visual.jpg);
-  background-repeat: no-repeat;
-  background-size: 155%;
-}
-.main_banner > .inner {
   position: relative;
+}
+#brand_visual ul {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+#brand_visual ul li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#brand_visual .visual_1 {
+  left: 0;
+  background: url(../img/main_visual.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+#brand_visual .visual_2 {
+  left: 100%;
+  background: url(../img/main_redesign.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+#brand_visual .visual_3 {
+  left: 200%;
+  background: url(../img/main_redesign2.jpg) 0 0 no-repeat;
+  background-size: cover;
 }
 .main_banner > .inner > .banner_text {
   position: absolute;
@@ -291,7 +320,7 @@ main {
   margin-top: -10px;
 }
 .main_banner > .inner > .banner_num {
-  position: relative;
+  position: absolute;
   align-items: center;
   top: 80%;
 }
@@ -315,7 +344,7 @@ main {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: 600px;
+  top: -10%;
 }
 .main_banner > .inner > .go > a {
   font-family: "GmarketSans";
@@ -325,6 +354,40 @@ main {
 }
 .main_banner > .inner > .go > a:hover {
   color: #134aa9;
+}
+.btnImg i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  color: #134aa9;
+  font-size: 30px;
+}
+.btnImg .fa-chevron-left {
+  left: 5%;
+}
+.btnImg .fa-chevron-right {
+  right: 5%;
+}
+.pager {
+  display: flex;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  gap: 10px;
+  transform: translateX(-50%);
+}
+.pager li {
+  width: 14px;
+  height: 15px;
+  background: url(../img/btnVisual.png) 0 -16px no-repeat;
+}
+.pager li.on {
+  background-position: 0 0;
+}
+.pager li a {
+  display: block;
+  text-indent: -98999px;
 }
 
 /* section_wrap2 */
