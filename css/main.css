@@ -265,9 +265,6 @@ main {
 }
 
 /* section_wrap1 */
-.section_wrap1 {
-  position: relative;
-}
 .main_banner {
   width: 100%;
   height: 700px;
@@ -300,11 +297,17 @@ main {
   background: url(../img/main_redesign2.jpg) 0 0 no-repeat;
   background-size: cover;
 }
+.main_banner > .inner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .main_banner > .inner > .banner_text {
   position: absolute;
   width: 100%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-60%);
 }
 .main_banner > .inner > .banner_text > h4 {
   font-family: "GmarketSans";
@@ -317,7 +320,7 @@ main {
   font-size: 80px;
   font-weight: 600;
   color: #134aa9;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 .main_banner > .inner > .banner_num {
   position: absolute;
@@ -343,8 +346,9 @@ main {
   padding: 0 80px;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  top: -10%;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
 }
 .main_banner > .inner > .go > a {
   font-family: "GmarketSans";
@@ -372,15 +376,16 @@ main {
 .pager {
   display: flex;
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 50%;
   gap: 10px;
   transform: translateX(-50%);
 }
 .pager li {
-  width: 14px;
-  height: 15px;
-  background: url(../img/btnVisual.png) 0 -16px no-repeat;
+  width: 12px;
+  height: 12px;
+  background: url(../img/btnVisual.png) 0 -11px no-repeat;
+  background-size: 80%;
 }
 .pager li.on {
   background-position: 0 0;
@@ -661,11 +666,11 @@ main {
 
 /* section_wrap5 */
 #time {
-	display: inline-block;
-	letter-spacing: -0.5px;
-	color: #134aa9;
-	font-size: 40px;
-	width: max(235px, 20%);
+  display: inline-block;
+  letter-spacing: -0.5px;
+  color: #134aa9;
+  font-size: 40px;
+  width: max(250px, 20%);
 }
 
 .section_wrap5 {
@@ -689,14 +694,14 @@ main {
   z-index: 2;
   transform: translate(0, 0);
   box-shadow: 0px 10px 30px rgba(19, 74, 170, 0.1);
-	transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s;
 }
 .notice_img1:hover,
 .notice_img2:hover,
 .notice_img3:hover {
-	cursor: pointer;
-	box-shadow: 10px 10px 30px 10px rgba(19, 74, 170, 0.2);
-	transform: translate(-4px, -4px);
+  cursor: pointer;
+  box-shadow: 10px 10px 30px 10px rgba(19, 74, 170, 0.2);
+  transform: translate(-4px, -4px);
 }
 .notice {
   font-family: "NotoSansKR";
