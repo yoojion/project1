@@ -117,5 +117,3 @@ function pagerMove(i) {
   nextEl.css({ left: "100%" }).stop().animate({ left: "0%" }, 500);
   current = i;
 }
-
-// sns slide
