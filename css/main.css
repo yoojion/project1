@@ -46,10 +46,13 @@ h5 {
   transform: translate(-50%, 0);
   z-index: 9999999;
   opacity: 1;
+  /* display: block; */
   transition: all 0.5s;
 }
 .popup.off {
   opacity: 0;
+  /* display: none; */
+  z-index: -1;
 }
 .popup > span {
   user-select: none;
@@ -239,7 +242,7 @@ nav > .gnb > li > a {
   width: 10%;
   height: 100%;
 }
-.logo > img {
+.logo img {
   width: 90%;
   height: 100%;
 }
@@ -300,7 +303,7 @@ main {
   background-size: cover;
 }
 
-.main_banner > .inner{
+.main_banner > .inner {
   position: absolute;
   top: 0;
   left: 50%;
@@ -309,8 +312,9 @@ main {
 .main_banner > .inner > .banner_text {
   position: absolute;
   width: 100%;
-  top:50%;
+  top: 50%;
   transform: translateY(-60%);
+  user-select: none;
 }
 .main_banner > .inner > .banner_text > h4 {
   font-family: "GmarketSans";
@@ -387,7 +391,7 @@ main {
 .pager li {
   width: 12px;
   height: 12px;
-  background: url(../img/btnVisual.png) 0 -11px no-repeat;
+  background: url(../img/btn_visual.png) 0 -11px no-repeat;
   background-size: 80%;
 }
 .pager li.on {
@@ -415,6 +419,7 @@ main {
   width: 60%;
   margin-top: 50px;
   padding-right: 130px;
+  user-select: none;
 }
 .section_wrap2 .tabs .tab_btn label {
   cursor: pointer;

@@ -7,7 +7,8 @@ btn.onclick = function () {
 
 const up_btn = document.querySelector("up_btn");
 
-//시계
+//timer
+
 function time() {
   let day = new Date();
   let now = day.toLocaleTimeString();
@@ -17,12 +18,13 @@ function time() {
 setInterval(time, 1000);
 
 //popup
+
 $(".close").on("click", function () {
   $(".popup").addClass("off");
 });
 
 //slide
-//변수초기화
+
 const visual = $("#brand_visual>ul>li");
 const next = $(".fa-chevron-right");
 const prev = $(".fa-chevron-left");
@@ -31,14 +33,12 @@ let current = 0;
 let setIntervalID;
 console.log(pager);
 
-//간격마다 함수 실행
 function timer() {
   setIntervalID = setInterval(() => {
     slideFn();
   }, 2000);
 }
 
-//슬라이드 인덱스번호 계산함수
 function slideFn() {
   let prev = visual.eq(current);
   let prevPage = pager.eq(current);
@@ -54,12 +54,10 @@ function slideFn() {
   nextPage.addClass("on");
 }
 
-//인덱스번호 전달받고 움직이는 함수
 function move(tg, start, end) {
   tg.css("left", start).stop().animate({ left: end }, 500, "easeOutCubic");
 }
 
-//정지,실행하기
 $(".main_banner").on({
   mouseenter: function () {
     clearInterval(setIntervalID);
@@ -70,7 +68,6 @@ $(".main_banner").on({
 });
 timer();
 
-//컨트롤 함수
 //next
 next.on("click", function () {
   let prev = visual.eq(current);
@@ -103,7 +100,7 @@ prev.on("click", function () {
   nextPage.addClass("on");
 });
 
-//페이저버튼
+//pager
 pager.on("click", function () {
   const i = $(this).index();
   pager.removeClass("on");
