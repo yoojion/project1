@@ -255,7 +255,7 @@ nav > .gnb > li > a {
 }
 .lss > a {
   font-family: "NotoSansKR";
-  font-size: 14px;
+  font-size: 16px;
   color: #134aa9;
 }
 .lss > a:hover {
@@ -598,7 +598,7 @@ main {
   text-align: center;
   line-height: 95px;
   font-family: "GmarketSans";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 900;
   color: #134aa9;
   background: rgba(255, 255, 255, 0);
@@ -662,7 +662,7 @@ main {
   text-align: center;
   line-height: 95px;
   font-family: "GmarketSans";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 900;
   color: #134aa9;
   background: #ffffff00;
@@ -763,7 +763,7 @@ main {
   bottom: 50px;
   right: 40px;
   font-family: "NotoSansKR";
-  font-size: 5rem;
+  font-size: 50px;
   font-weight: 100;
   color: #ababab;
 }
@@ -897,7 +897,7 @@ main {
   align-items: center;
   color: #7b7b7b;
   font-family: "NotoSansKR";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 }
 .family2 {
