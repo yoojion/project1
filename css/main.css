@@ -716,7 +716,7 @@ main {
   font-family: "NotoSansKR";
   font-size: 18px;
   font-weight: 400;
-  color: #ababab;
+  color: #595959;
 }
 .title {
   position: absolute;
@@ -743,7 +743,7 @@ main {
   line-height: 33px;
   font-weight: 400;
   text-align: justify;
-  color: #787d86;
+  color: #595959;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -756,7 +756,7 @@ main {
   font-family: "NotoSansKR";
   font-size: 13px;
   font-weight: 400;
-  color: #ababab;
+  color: #595959;
 }
 .click {
   position: absolute;
@@ -895,10 +895,10 @@ main {
   padding: 0 13px;
   justify-content: space-between;
   align-items: center;
-  color: #7b7b7b;
+  color: #c2c2c2;
   font-family: "NotoSansKR";
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .family2 {
   display: none;
@@ -924,7 +924,7 @@ main {
 }
 .ft_sc2 > .fttext {
   height: 80px;
-  color: #7b7b7b;
+  color: #c2c2c2;
   font-family: "NotoSansKR";
   font-size: 14px;
   font-weight: 300;
