@@ -53,6 +53,7 @@ h5 {
   opacity: 0;
   /* display: none; */
   z-index: -1;
+  user-select: none;
 }
 .popup > span {
   user-select: none;
