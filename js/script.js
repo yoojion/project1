@@ -48,7 +48,7 @@ function slideFn() {
   if (current == visual.length) {
     current = 0;
   }
-  let next = visual.eq(current); //1
+  let next = visual.eq(current);
   let nextPage = pager.eq(current);
   move(next, "100%", "0%");
   nextPage.addClass("on");
@@ -78,7 +78,7 @@ next.on("click", function () {
   if (current == visual.length) {
     current = 0;
   }
-  let next = visual.eq(current); //1
+  let next = visual.eq(current);
   let nextPage = pager.eq(current);
   move(next, "100%", "0%");
   nextPage.addClass("on");
@@ -94,23 +94,24 @@ prev.on("click", function () {
   if (current == -visual.length) {
     current = 0;
   }
-  let next = visual.eq(current); //1
+  let next = visual.eq(current);
   let nextPage = pager.eq(current);
   move(next, "-100%", "0%");
   nextPage.addClass("on");
 });
 
 //pager
-pager.on("click", function () {
+pager.on('click', function () {
   const i = $(this).index();
-  pager.removeClass("on");
-  $(this).addClass("on");
+  pager.removeClass('on');
+  $(this).addClass('on');
   pagerMove(i);
 });
 function pagerMove(i) {
-  let currentEl = visual.eq(current);
+  let currentEl = visual.eq(current); 
   let nextEl = visual.eq(i);
-  currentEl.css({ left: 0 }).stop().animate({ left: "-100%" }, 500);
-  nextEl.css({ left: "100%" }).stop().animate({ left: "0%" }, 500);
+  currentEl.css({ left: 0 }).stop().animate({ left: '-100%' }, 500);
+  nextEl.css({ left: '100%' }).stop().animate({ left: '0%' }, 500);
   current = i;
 }
+
