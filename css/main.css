@@ -299,7 +299,8 @@ main {
   background: url(../img/main_redesign2.jpg) 0 0 no-repeat;
   background-size: cover;
 }
-.main_banner > .inner {
+
+.main_banner > .inner{
   position: absolute;
   top: 0;
   left: 50%;
@@ -308,7 +309,7 @@ main {
 .main_banner > .inner > .banner_text {
   position: absolute;
   width: 100%;
-  top: 50%;
+  top:50%;
   transform: translateY(-60%);
 }
 .main_banner > .inner > .banner_text > h4 {
@@ -667,6 +668,16 @@ main {
 }
 
 /* section_wrap5 */
+<<<<<<< HEAD
+=======
+#time {
+	display: inline-block;
+	letter-spacing: -0.5px;
+	color: #134aa9;
+	font-size: 40px;
+	width: max(235px, 18%);
+}
+>>>>>>> 5bc0773d0dc664ce492930a8901fedd757076e16
 
 #time {
   display: inline-block;
