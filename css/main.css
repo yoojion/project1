@@ -668,16 +668,6 @@ main {
 }
 
 /* section_wrap5 */
-<<<<<<< HEAD
-=======
-#time {
-	display: inline-block;
-	letter-spacing: -0.5px;
-	color: #134aa9;
-	font-size: 40px;
-	width: max(235px, 18%);
-}
->>>>>>> 5bc0773d0dc664ce492930a8901fedd757076e16
 
 #time {
   display: inline-block;
