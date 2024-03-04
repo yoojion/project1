@@ -1,5 +1,5 @@
 # 경기생활문화센터 <!-- omit in toc -->
-### [기획서 보기](./project1.pdf)
+### [기획서 보기](/project1.pdf)
 > 경기생활문화센터 **오류 수정 후 구현** 한 프로젝트 입니다.
 > 
 > 배포화면 보기 [사이트보기 ](https://yoojion.github.io/project1/). 
