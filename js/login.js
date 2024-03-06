@@ -27,7 +27,7 @@ function login() {
     text.text(`${uid}님 ${textold}`);
     $(".input_group, #login").css("display", "none");
     logoutBtn.css("display", "flex");
-    $(".login").html(`<i class="fa-solid fa-lock"></i>&nbsp;로그아웃`);
+    $(".login").html(`<i class="fa-solid fa-user"></i>&nbsp;마이페이지`);
     user.isLoggedIn = true;
     localStorage.setItem("user", JSON.stringify(user));
   } else {
@@ -45,6 +45,8 @@ function logout() {
     $(".input_group, #login").css("display", "flex");
     logoutBtn.css("display", "none");
     $(".login").text(`<i class="fa-solid fa-lock"></i>&nbsp;로그인`);
+    document.querySelector("#uid").value = "";
+    document.querySelector("#upw").value = "";
   }
 }
 
