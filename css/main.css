@@ -806,9 +806,11 @@ main {
   left: 65%;
   z-index: 1;
   animation-name: movel1;
-  animation-duration: 3s;
+  animation-duration: 4s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  opacity: 0.8;
 }
 @keyframes movel1 {
   0% {
@@ -830,7 +832,8 @@ main {
   left: -20px;
   z-index: 1;
   animation-name: move2;
-  animation-duration: 3s;
+  animation-duration: 4s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -852,7 +855,8 @@ main {
   right: -70px;
   z-index: 1;
   animation-name: move3;
-  animation-duration: 3s;
+  animation-duration: 4s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -929,17 +933,21 @@ main {
 }
 .ft_sc2 {
   align-items: center;
+  justify-content: space-between;
 }
-.ft_sc2 > .ftlogo1 {
-  width: 15%;
+.ftlogo_section {
+  width: 25%;
+}
+.ft_sc2 .ftlogo1 {
+  width: 55%;
   height: 80px;
   background: url(../img/main-logo-gray.svg) no-repeat;
   background-size: 80%;
   background-position: center;
   opacity: 0.5;
 }
-.ft_sc2 > .ftlogo2 {
-  width: 10%;
+.ft_sc2 .ftlogo2 {
+  width: 45%;
   height: 80px;
   background: url(../img/gunggido_logo.svg) no-repeat;
   background-size: 70%;
@@ -947,10 +955,26 @@ main {
   opacity: 0.5;
 }
 .ft_sc2 > .fttext {
+  width: 65%;
   height: 80px;
   color: #c2c2c2;
   font-family: "NotoSansKR";
   font-size: 14px;
   font-weight: 300;
   padding-left: 50px;
+}
+.ft_sc2 .validation {
+  width: 10%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+}
+.ft_sc2 .validation .val1 > img {
+  width: 100%;
+  object-fit: contain;
+}
+.ft_sc2 .validation .val2 > img {
+  width: 100%;
+  object-fit: contain;
 }
