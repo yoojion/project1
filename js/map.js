@@ -15,7 +15,7 @@ var marker = new kakao.maps.Marker({
 marker.setMap(map);
 
 var iwContent =
-    '<div class="myMap">경기생활문화센터<br><a class="bt" href="//map.kakao.com/link/to/경기생활문화센터,37.26774, 126.9831"target="_blank">오시는 길</a></div>',
+    '<div class="myMap">경기생활문화센터<br><a class="bt" href="http://map.kakao.com/link/to/경기생활문화센터,37.26774, 126.9831"target="_blank">오시는 길</a></div>',
   iwPosition = new kakao.maps.LatLng(37.26774, 126.9831);
 var infowindow = new kakao.maps.InfoWindow({
   position: iwPosition,
