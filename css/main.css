@@ -962,6 +962,7 @@ main {
   font-size: 14px;
   font-weight: 300;
   padding-left: 50px;
+  text-align: right;
 }
 .ft_sc2 .validation {
   width: 10%;
